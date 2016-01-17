@@ -1,7 +1,8 @@
 #!/bin/bash
 
-docker run -i -p 3000:3000 \
-  -v /home/mitch/grafana/data:/var/lib/grafana \
-  -v /home/mitch/grafana/logs:/var/log/grafana \
-  -e "GF_SERVER_ROOT_URL=http://firefly.lan"  \
+docker run -d -h grafana
+  -p 127.0.0.1:3030:3030 \
+  -v /var/grafana/data:/var/lib/grafana \
+  -v /var/grafana/logs:/var/log/grafana \
+  -e "GF_SERVER_ROOT_URL=http://grafana.r00t.ca"  \
   grafana
