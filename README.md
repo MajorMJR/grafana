@@ -8,9 +8,9 @@ Currently this container builds Grafana 2.6
 ## Running your Grafana image
 --------------------------
 
-Start your image binding the external port `3000`.
+Start your image binding the external port `3030`.
 
-   docker run -i -p 3000:3000 grafana/grafana
+   docker run -i -p 3030:3030 grafana/grafana
 
 Try it out, default admin user is admin/admin.
 
