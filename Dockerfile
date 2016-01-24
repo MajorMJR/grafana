@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 VOLUME ["/var/lib/grafana", "/var/log/grafana", "/etc/grafana"]
 
-EXPOSE 3000
+EXPOSE 3030
 
 ENTRYPOINT ["/usr/sbin/grafana-server", "--homepath=/usr/share/grafana", "--config=/etc/grafana/grafana.ini", "cfg:default.paths.data=/var/lib/grafana", "cfg:default.paths.logs=/var/log/grafana"]
 
